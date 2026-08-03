@@ -1,0 +1,22 @@
+[project]
+name = "mmtd-recommender"
+version = "0.1.0"
+description = "Popularity and collaborative-filtering song recommenders over the MMTD (Million Musical Tweets Dataset)"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=2.0",
+    "requests>=2.31",
+    "scipy>=1.11",
+    "scikit-learn>=1.3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+app = ["streamlit>=1.30"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["mmtd_recommender"]
